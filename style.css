@@ -1,0 +1,111 @@
+@import url("fonts.css");
+
+/* Basics */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100%;
+  font-size: 20px;
+  font-family: "Apfel Grotezk",
+  sans-serif;
+  color: black;
+}
+
+figure {
+  margin: 0;
+}
+
+h1 {
+  font-size: 104px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+a {
+  color: inherit;
+}
+
+/* Title */
+#title {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+#title figure img {
+  max-width: 604px;
+  height: auto;
+}
+
+/* Sections */ 
+.section {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 40px;
+}
+
+/* Age */ 
+#age {
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+#age figure img {
+  max-width: 604px;
+  height: auto;
+}
+
+#age .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#age figure {
+  align-self: flex-end;
+}
+
+
+
+/* The layers of the Internet */
+#internet-layers {
+  display: block;
+  min-height: 100vh;
+}
+
+#internet-layers div {
+  min-height: 33.33vh;
+}
+
+#the-dark-web-is-scary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Credits */
+#credits {
+  font-size: 16px;
+}
