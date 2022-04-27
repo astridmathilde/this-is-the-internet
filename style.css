@@ -12,6 +12,7 @@ body {
   border: none;
   margin: 0;
   padding: 0;
+  background-color: #ccdbfd;
 }
 
 html {
@@ -38,7 +39,8 @@ img {
 }
 
 h1 {
-  font-size: 104px;
+  font-size: 250px;
+  padding-left: 10px;
 }
 
 h2 {
@@ -49,69 +51,81 @@ a {
   color: inherit;
 }
 
-/* Title */
-#title {
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-}
-
-#title figure img {
-  max-width: 304px;
-  height: auto;
-}
-
-/* Sections */ 
+/* Sections */
 .section {
   display: flex;
   position: relative;
   flex-direction: column;
   width: 100vw;
   min-height: 100vh;
-  padding: 40px;
+  padding: 70px;
+}
+/* Title */
+#title {
+  padding: 30px;
 }
 
-/* Age */ 
+#title h1 {
+margin: 0;
+margin-top: 50px;
+  text-align: left;
+}
+
+#title figure img {
+  width: 20%;
+  margin-top: 80px;
+
+}
+
+#title figure{
+  width: 100%;
+  text-align: center;
+}
+
+/* Age */
 #age {
   flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: space-between;
+  font-size: 30px;
+  position: relative;
+  padding-left: 150px;
+  padding-right: 200px;
+  padding-top: 200px;
+
+
+}
+
+#age p{
+  width: 70%;
+
 }
 
 
 #age figure {
   width: 30%;
   margin-left: 40px;
+  margin-top: 20px;
+
+
 }
 
 #age figure img {
-  max-height: 304px;
-  width: auto;
+
 }
 
-/* Size & weight */ 
-#size,
-#weight {
+/* Size & weight */
+#size{
   flex-direction: row;
-  align-items: center;
+  justify-content: space-between;
+  font-size: 30px;
+  position: relative;
+  padding-left: 150px;
+  padding-right: 200px;
+  padding-top: 200px;
 }
 
-#size figure,
-#weight figure {
-  order: -1;
-  width: 60%;
-  text-align: center;
-}
 
-#size figure img {
-  max-width: 604px;
-}
-
-#weight figure img {
-  max-width: 504px;
-}
-
-/* When Internet became available */ 
+/* When Internet became available */
 #availability {
   flex-direction: row;
   justify-content: space-between;
@@ -161,7 +175,7 @@ a {
   width: auto;
 }
 
-/* Most watched video on Youtube */ 
+/* Most watched video on Youtube */
 #youtube {
   flex-direction: row;
   justify-content: space-between;
@@ -202,7 +216,12 @@ a {
   justify-content: center;
 }
 
-/* Video of self driving car stopped by police */ 
+#the-dark-web-is-scary.visible {
+  background-color: black;
+  color: white;
+}
+
+/* Video of self driving car stopped by police */
 .section.video {
   height: 100vh;
 }
