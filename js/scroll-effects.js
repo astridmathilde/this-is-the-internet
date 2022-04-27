@@ -1,15 +1,25 @@
-const theDarkWebIsScary = document.getElementById("the-dark-web-is-scary"); 
-const theDarkWebIsScary_height = theDarkWebIsScary.offsetHeight;
+const theDarkWebIsScary = document.querySelector("#the-dark-web-is-scary");
 
+/* Function to add class on element when scrolling into view */
+const callback = (entries, observer) => {
+  entries.forEach((entry) => {
+    // Check if you have reached the element
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+      // add more elements to observe here
+    } else {
+      entry.target.classList.remove("visible");
+    }
+  });
+}
 
-/* Trigger scroll effect function */ 
-window.addEventListener('scroll', function() {
-  scrollPosition = window.scrollY;
+const options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.25
+}
 
-  if( scrollPosition >= theDarkWebIsScary_height ) {
-    theDarkWebIsScary.classList.add("visible"); 
-  } else {
-    theDarkWebIsScary.classList.remove("visible"); 
-  }
-  console.log(scrollPosition);
-});
+const observer = new IntersectionObserver(callback, options);
+
+observer.observe(theDarkWebIsScary);
+// add more elements to observe here

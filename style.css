@@ -39,8 +39,14 @@ img {
 }
 
 h1 {
-  font-size: 250px;
+  font-size: 148px;
   padding-left: 10px;
+}
+
+@media all and (min-width: 1754px) {
+  h1 {
+  font-size: 250px;
+  }
 }
 
 h2 {
@@ -214,11 +220,13 @@ margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: background-color 0.5s ease-in-out;
 }
 
 #the-dark-web-is-scary.visible {
   background-color: black;
   color: white;
+  transition: background-color 0.5s ease-in-out;
 }
 
 /* Video of self driving car stopped by police */
