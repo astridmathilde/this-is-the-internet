@@ -23,7 +23,7 @@ html {
 body {
   overflow-x: hidden;
   min-height: 100%;
-  font-size: 20px;
+  font-size: 30px;
   font-family: "Apfel Grotezk",
   sans-serif;
   color: black;
@@ -45,7 +45,7 @@ h1 {
 
 @media all and (min-width: 1754px) {
   h1 {
-  font-size: 250px;
+    font-size: 250px;
   }
 }
 
@@ -72,15 +72,15 @@ a {
 }
 
 #title h1 {
-margin: 0;
-margin-top: 50px;
+  margin: 0;
+  margin-top: 50px;
   text-align: left;
 }
 
 #title figure img {
   width: 20%;
   margin-top: 80px;
-
+  
 }
 
 #title figure{
@@ -92,31 +92,36 @@ margin-top: 50px;
 #age {
   flex-direction: row;
   justify-content: space-between;
-  font-size: 30px;
   position: relative;
   padding-left: 150px;
   padding-right: 200px;
   padding-top: 200px;
-
-
+  
+  
 }
 
-#age p{
+#age .tekst {
   width: 70%;
-
+  
 }
 
 
 #age figure {
   width: 30%;
   margin-left: 40px;
-  margin-top: 20px;
-
-
+  margin-top: 130px;
+  transform: translate(0);
+  animation: flyBabyfly 1.5s ease-in-out infinite alternate forwards; 
 }
 
-#age figure img {
+@keyframes flyBabyfly {
+  0% {
+    transform: translate(0);
+  }
 
+  100% {
+    transform: translate(-40px, -50px);
+  }
 }
 
 /* Size & weight */
@@ -125,9 +130,31 @@ margin-top: 50px;
   justify-content: space-between;
   font-size: 30px;
   position: relative;
-  padding-left: 150px;
+  padding-left: 200px;
   padding-right: 200px;
   padding-top: 200px;
+}
+
+#size img {
+  width: 1500px;
+  height: auto;
+}
+
+#size figure{
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  
+}
+
+#weight figure{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  padding-top: 250px;
 }
 
 
@@ -228,7 +255,6 @@ margin-top: 50px;
   color: white;
   transition: background-color 0.5s ease-in-out;
 }
-
 /* Video of self driving car stopped by police */
 .section.video {
   height: 100vh;
