@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>This is the Internet</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -15,7 +14,7 @@
   <div class="section" id="title">
     <h1>This is the Internet</h1>
     <figure>
-      <img src="img/dette-er-internett.svg" />
+      <a id="play-song" class="" href="#" role="button" onclick="playSong()"><img src="img/dette-er-internett.svg" /></a>
     </figure>
   </div>
   
@@ -92,14 +91,16 @@
         
         <figure>
           <img src="img/video-internett.svg" />
-          <iframe class="video" width="100%" height="100%" src="https://www.youtube.com/embed/9bZkp7q19f0" title="YouTube video player"
-          frameborder="0"></iframe>
+          <a href="#" role="button" onclick="pauseSong()"><iframe onclick="pauseSong()" class="video" width="100%" height="100%" src="https://www.youtube.com/embed/9bZkp7q19f0" title="YouTube video player"
+          frameborder="0"></iframe></a>
         </figure>
         
       </div>
       
       <!-- The layers of the Internet-->
       <div class="section" id="internet-layers">
+        <h2>The Layers of the Internet</h2>
+        
         <figure class="iceberg">
           <img src="img/internett-isfjell.svg" />
         </figure>
@@ -107,8 +108,10 @@
         <div class="wave"></div>
         
         <div class="internet-layer" id="surface-web">
-          <p>The <strong>surface web</strong> contains only 10% of the Internet. The content in the surface web is visible to
-            everyone and can be found by search engines.</p>
+          <div class="text">
+            <p>The <strong>surface web</strong> contains only 10% of the Internet. The content in the surface web is visible to
+              everyone and can be found by search engines.</p>
+            </div>
             
             <figure>
               <img src="img/flyte-internett.svg" />
@@ -116,10 +119,12 @@
           </div>
           
           <div class="internet-layer" id="deep-web">
-            <p>The <strong>deep wep</strong> contains 90% of the Internet. The content in the deep web is hidden from search
-              engines or only accessible through login forms.</p>
-              
-              <p>It is about 400-500 times larger than the surface web!</p>
+            <div class="text">
+              <p>The <strong>deep web</strong> contains 90% of the Internet. The content in the deep web is hidden from search
+                engines or only accessible through login forms.</p>
+                
+                <p>It is about 400-500 times larger than the surface web!</p>
+              </div>
               
               <figure>
                 <img src="img/snorkel-internett.svg" alt="">
@@ -127,40 +132,39 @@
             </div>
             
             <div class="internet-layer" id="dark-web">
-              <p>Within the deep web lives the <strong>dark web</strong>. About 5% of the Internet can be found here.</p>
-              <p>The content can only be accessed with special web browsers.</p>
+              <div class="text">
+                <p>Within the deep web lives the <strong>dark web</strong>. About 5% of the Internet can be found here.</p>
+                <p>The content can only be accessed with special web browsers like Tor.</p>
+              </div>
               
               <figure>
                 <img src="img/dykker-internett.svg" alt="">
               </figure>
-              
             </div>
+            
+            <figure class="ocean">
+              <img src="img/ocean.svg" />
+            </figure>
           </div>
           
-          <!--
-            
-            <div class="section" id="the-dark-web-is-scary">
-              <figure>
-                <img src="img/monster-internett.svg" alt="">
-              </figure>
-              
-              <p>The dark web is used for both legal and illegal purposes. Enter with caution!</p>
-            </div>-->
-            
-            <!-- Video of self driving car stopped by police-->
-            <div class="section video">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/O262PZFCeB4" title="YouTube video player"
-              frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-            </div>
-            
-            <!-- Credits-->
-            <div id="credits">
-              <p>Design/code: <a href="#">Astrid Mathilde Andersen</a> & <a href="#">Erikka Sørensen</a></p>
-              <p>Illustrasjoner: <a href="#">Erikka Sørensen</a></p>
-            </div>
-            <script src="js/scroll-effects.js"></script>
-            <script src="js/days-since-birthday.js"></script>
-          </body>
+          <!-- Video of self driving car stopped by police-->
+          <div class="section video">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/O262PZFCeB4" title="YouTube video player"
+            frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          </div>
           
-          </html>
+          <!-- Credits-->
+          <div id="credits">
+            <p>Design/code: <a href="#">Erikka Sørensen</a> & <a href="https://astridandersen.no">Astrid Mathilde Andersen</a></p>
+            <p>Text: <a href="https://astridandersen.no">Astrid Mathilde Andersen</a></p>
+            <p>Illustration: <a href="#">Erikka Sørensen</a></p>
+          </div>
+          
+          <!-- Scripts -->
+          <script src="js/scroll-effects.js"></script>
+          <script src="js/days-since-birthday.js"></script>
+          <script src="js/play-song.js"></script>
+        </body>
+        
+        </html>
