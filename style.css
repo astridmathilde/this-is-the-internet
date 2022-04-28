@@ -37,7 +37,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
 h1 {
   font-size: 148px;
   padding-left: 10px;
@@ -48,7 +47,6 @@ h1 {
     font-size: 250px;
   }
 }
-
 h2 {
   font-size: 24px;
 }
@@ -110,14 +108,14 @@ a {
   margin-left: 40px;
   margin-top: 130px;
   transform: translate(0);
-  animation: flyBabyfly 1.5s ease-in-out infinite alternate forwards; 
+  animation: flyBabyfly 1.5s ease-in-out infinite alternate forwards;
 }
 
 @keyframes flyBabyfly {
   0% {
     transform: translate(0);
   }
-
+  
   100% {
     transform: translate(-40px, -50px);
   }
@@ -148,12 +146,19 @@ a {
   
 }
 
+#weight p{
+  position: relative;
+  padding-left: 200px;
+  padding-right: 200px;
+  
+}
+
 #weight figure{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 30%;
-  padding-top: 250px;
+  padding-top: 200px;
 }
 
 
@@ -164,8 +169,8 @@ a {
 }
 
 #availability figure {
-  width: 50%;
-  text-align: right;
+  width: 60%;
+  text-align: left;
 }
 
 #availability figure img {
@@ -246,13 +251,28 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transition: background-color 0.5s ease-in-out;
 }
 
-#the-dark-web-is-scary.visible {
-  background-color: black;
-  color: white;
-  transition: background-color 0.5s ease-in-out;
+#surface-web{
+  
+}
+
+#surface-web figure{
+  position: relative;
+  width: 20%;
+  text-align: right;
+}
+
+#deep-web figure{
+  position: relative;
+  width: 20%;
+  text-align: right;
+}
+
+#dark-web figure{
+  position: relative;
+  width: 20%;
+  text-align: right;
 }
 /* Video of self driving car stopped by police */
 .section.video {
