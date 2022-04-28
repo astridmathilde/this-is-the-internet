@@ -1,0 +1,30 @@
+/* Animation for #age */
+@keyframes flyBabyfly {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-40px, -50px);
+  }
+}
+
+@-webkit-keyframes flyBabyfly {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-40px, -50px);
+  }
+}
+
+@-moz-keyframes flyBabyfly {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-40px, -50px);
+  }
+}

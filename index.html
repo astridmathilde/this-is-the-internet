@@ -24,33 +24,6 @@
   <div class="tekst">
     <p>The Internet was born January 1, 1983. But the World Wide Web (WWW) did not exist until the british scientist Tim Berners-Lee invented it in March 1989.</p>
     <p>The Internet is <span class="internet-age"></span> days old today.</p>
-  
-    <script>
-      const convertMsToDays = ms => {
-        const msInOneSecond = 1000
-        const secondsInOneMinute = 60
-        const minutesInOneHour = 60
-        const hoursInOneDay = 24
-
-        const minutesInOneDay = hoursInOneDay * minutesInOneHour
-        const secondsInOneDay = secondsInOneMinute * minutesInOneDay
-        const msInOneDay = msInOneSecond * secondsInOneDay
-
-        return Math.ceil(ms / msInOneDay)
-      }
-
-      const daysSinceBirth = (birthDay, today) => {
-        let differenceInMs = today.getTime() - birthDay.getTime()
-
-        return convertMsToDays(differenceInMs)
-      }
-
-      const ageContainer = document.querySelector('.internet-age')
-      const birthDay = new Date("01/01/1983")
-      const today = new Date()
-
-      ageContainer.innerHTML = daysSinceBirth(birthDay, today)
-    </script>
   </div>
 
     <figure>
@@ -176,6 +149,8 @@
     <p>Illustrasjoner: <a href="#">Erikka Sørensen</a></p>
   </div>
 
+  <script src="js/scroll-effects.js"></script>
+  <script src="js/days-since-birthday.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,7 @@
-/* Basics */
-@import url("fonts.css");
+@import url("css/fonts.css");
+@import url("css/animations.css");
 
+/* Basics */
 *,
 *:before,
 *:after {
@@ -26,6 +27,7 @@ body {
   font-size: 30px;
   font-family: "Apfel Grotezk",
   sans-serif;
+  font-weight: 400;
   color: black;
 }
 
@@ -108,17 +110,9 @@ a {
   margin-left: 40px;
   margin-top: 130px;
   transform: translate(0);
+  -webkit-animation: flyBabyfly 1.5s ease-in-out infinite alternate forwards;
+  -moz-animation: flyBabyfly 1.5s ease-in-out infinite alternate forwards;
   animation: flyBabyfly 1.5s ease-in-out infinite alternate forwards;
-}
-
-@keyframes flyBabyfly {
-  0% {
-    transform: translate(0);
-  }
-  
-  100% {
-    transform: translate(-40px, -50px);
-  }
 }
 
 /* Size & weight */
@@ -251,10 +245,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-#surface-web{
-  
 }
 
 #surface-web figure{

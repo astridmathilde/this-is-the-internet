@@ -1,0 +1,6 @@
+@font-face {
+  font-family: "Apfel Grotezk";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/ApfelGrotezk-Regular.woff") format("woff"), url("../fonts/ApfelGrotezk-Regular.woff2") format("woff2");
+}
