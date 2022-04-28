@@ -28,6 +28,7 @@ body {
   font-family: "Apfel Grotezk",
   sans-serif;
   font-weight: 400;
+  line-height: 1.3;
   color: black;
 }
 
@@ -41,6 +42,7 @@ img {
 }
 h1 {
   font-size: 148px;
+  font-weight: 400;
   padding-left: 10px;
 }
 
@@ -48,9 +50,6 @@ h1 {
   h1 {
     font-size: 250px;
   }
-}
-h2 {
-  font-size: 24px;
 }
 
 a {
@@ -131,8 +130,7 @@ a {
   height: auto;
 }
 
-#size figure{
-  
+#size figure {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -140,14 +138,14 @@ a {
   
 }
 
-#weight p{
+#weight p {
   position: relative;
   padding-left: 200px;
   padding-right: 200px;
   
 }
 
-#weight figure{
+#weight figure {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -233,37 +231,114 @@ a {
 
 /* The layers of the Internet */
 #internet-layers {
+  position: relative;
   display: block;
-  min-height: 100vh;
+  overflow: hidden;
+  min-height: 160vh;
+  padding-top: 0;
+  font-size: 0.7em;
+}
+
+@media all and (min-width: 1754px) {
+  #internet-layers {
+    font-size: 0.8em;
+  }
 }
 
 #internet-layers div {
-  min-height: 33.33vh;
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-#the-dark-web-is-scary {
+#internet-layers .internet-layer p {
+  width: 30ch;
+}
+
+@media all and (min-width: 1754px) {
+  #internet-layers p {
+    width: 35ch;
+  }
+}
+
+#internet-layers .internet-layer figure {
+  width: 13vw;
+  height: auto;
+}
+
+#internet-layers .iceberg {
+  max-width: 100%;
+  text-align: center;
+}
+
+#internet-layers .iceberg img {
+  max-width: 35vw;
+}
+
+#internet-layers .wave {
+  position: absolute;
+  top: 40vh;
+  /*left: -3vw;
+  right: -3vw;*/
+  left: 0;
+  right: 0;
+  background-image: url("img/bolge.svg");
+  background-repeat: repeat-x;
+  min-width: 100%;
+  height: 12px;
+}
+
+#internet-layers #surface-web {
+  position: absolute;
+  top: 5vh; 
+  left: 0;
+}
+
+@media all and (min-width: 1754px) {
+  #internet-layers #surface-web {
+    top: 10vh;
+  }
+}
+
+#internet-layers #surface-web p {
+  width: 40ch;
+}
+
+#internet-layers #surface-web figure {
+  position: absolute;
+  top: 45vh;
+  right: 3vw;
+}
+
+@media all and (min-width: 1754px) {
+  #internet-layers #surface-web figure {
+    top: 38vh;
+  }
+}
+
+#internet-layers #deep-web {
+  position: absolute;
+  top: 50vh;
+  left: 0;
+}
+
+#internet-layers #deep-web figure {
+  margin-top: 40px;
+}
+
+#internet-layers #dark-web {
   display: flex;
+  position: absolute;
   flex-direction: column;
-  justify-content: center;
+  align-items: flex-end;
+  top: 90vh;
+  right: 0;
 }
 
-#surface-web figure{
-  position: relative;
-  width: 20%;
-  text-align: right;
+#internet-layers #dark-web p + p {
+  margin-top: 0;
 }
 
-#deep-web figure{
-  position: relative;
-  width: 20%;
-  text-align: right;
-}
-
-#dark-web figure{
-  position: relative;
-  width: 20%;
-  text-align: right;
-}
 /* Video of self driving car stopped by police */
 .section.video {
   height: 100vh;

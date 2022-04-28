@@ -4,3 +4,10 @@
   font-display: swap;
   src: url("../fonts/ApfelGrotezk-Regular.woff") format("woff"), url("../fonts/ApfelGrotezk-Regular.woff2") format("woff2");
 }
+
+@font-face {
+  font-family: "Apfel Grotezk";
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/ApfelGrotezk-Fett.woff") format("woff"), url("../fonts/ApfelGrotezk-Fett.woff2") format("woff2");
+}
