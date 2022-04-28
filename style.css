@@ -69,12 +69,12 @@ a {
 /* Title */
 #title {
   padding: 30px;
+  text-align: center;
 }
 
 #title h1 {
   margin: 0;
   margin-top: 50px;
-  text-align: left;
 }
 
 #title figure img {
@@ -85,7 +85,6 @@ a {
 
 #title figure{
   width: 100%;
-  text-align: center;
 }
 
 /* Age */
