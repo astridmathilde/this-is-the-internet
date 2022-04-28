@@ -1,4 +1,10 @@
-const theDarkWebIsScary = document.querySelector("#the-dark-web-is-scary");
+/* The layers of the Internet */ 
+const surfaceWeb = document.getElementById("surface-web").getElementsByTagName("p")[0];
+const surfaceWebImg = document.getElementById("surface-web").getElementsByTagName("figure")[0];
+const deepWeb = document.getElementById("deep-web").getElementsByTagName("p")[0];
+const deepWebImg = document.getElementById("deep-web").getElementsByTagName("figure")[0]
+const darkWeb = document.getElementById("dark-web").getElementsByTagName("p")[0];
+const darkWebImg = document.getElementById("dark-web").getElementsByTagName("figure")[0];
 
 /* Function to add class on element when scrolling into view */
 const callback = (entries, observer) => {
@@ -6,8 +12,7 @@ const callback = (entries, observer) => {
     // Check if you have reached the element
     if (entry.isIntersecting) {
       entry.target.classList.add("visible");
-      // add more elements to observe here
-    } else {
+    }  else {
       entry.target.classList.remove("visible");
     }
   });
@@ -16,10 +21,14 @@ const callback = (entries, observer) => {
 const options = {
   root: null,
   rootMargin: "0px",
-  threshold: 0.25
+  threshold: 1
 }
 
 const observer = new IntersectionObserver(callback, options);
 
-observer.observe(theDarkWebIsScary);
-// add more elements to observe here
+/* The layers of the Internet */ 
+observer.observe(surfaceWeb);
+observer.observe(surfaceWebImg);
+observer.observe(deepWebImg);
+observer.observe(darkWeb);
+observer.observe(darkWebImg);

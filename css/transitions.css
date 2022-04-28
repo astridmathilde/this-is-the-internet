@@ -1,0 +1,17 @@
+:root {
+  --duration-fast: 0.2s;
+  --duration-normal: 0.4s;
+  --duration-slow: 0.6s;
+  --ease-in: cubic-bezier(0.41,
+  0.03,
+  1,
+  1);
+  --ease-out: cubic-bezier(0,
+  0.08,
+  0.47,
+  1);
+  --ease-in-out: cubic-bezier(0.45,
+  0,
+  0.55,
+  1);
+}
