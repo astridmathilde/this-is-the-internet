@@ -4,6 +4,3 @@
     song.play();
   }
   
-  function pauseSong() {
-    song.pause();
-  }
