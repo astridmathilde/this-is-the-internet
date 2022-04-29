@@ -212,7 +212,7 @@ a {
   width: 35%;
   padding-top: 0px;
   text-align: left;
-
+  animation: rotateEarth 1.5s ease-in-out infinite alternate forwards;
 }
 
 
